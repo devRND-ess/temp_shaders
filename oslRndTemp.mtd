@@ -1,0 +1,26 @@
+# oslRndTemp                   0x00070003 
+
+[node oslRndTemp]
+    maya.name               STRING	"oslRndTemp"
+    maya.id                 INT      0x00070003
+    maya.classification     STRING  "shader/surface"
+    maya.output_name        STRING  "outColor"
+    maya.output_shortname   STRING  "out"
+
+    [attr constantColorA]
+        desc                STRING	"give it a colorA"
+		min					FLOAT	0
+		max					FLOAT	1
+		softmin				FLOAT	0
+		softmax				FLOAT	1
+		default				FLOAT	0.5
+        maya.name           STRING  "floatA"
+		
+	[attr constantColorB]
+        desc                STRING	"give it a colorB"
+		min					FLOAT	0
+		max					FLOAT	1
+		softmin				FLOAT	0
+		softmax				FLOAT	1
+		default				FLOAT	0.5
+        maya.name           STRING  "floatB"

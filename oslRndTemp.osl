@@ -1,0 +1,12 @@
+shader oslRndTemp
+(
+	float constantColorA = 0.0,
+	float constantColorB = 1.0,
+	output color result = 0.0
+)
+{
+	if(constantColorA==1.0)
+		result = constantColorA;
+	else
+	result = constantColorB;
+}
